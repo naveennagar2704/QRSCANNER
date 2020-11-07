@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <title>QR Ready - QR code Generator and Scanner</title>
+   </head>
+   <body class="bg-light">
+      <div class="container">
+         <div class="row">
+            <div class="qr-wrap ">
+
+              <div class="logo d-block text-center">
+                <img src="https://1.bp.blogspot.com/-jflgilx7M5M/XzAAYl3CvsI/AAAAAAAAAds/MaBljaDHqf4smqDOPIN1psgUtQW1h9EcwCLcBGAsYHQ/s1600/f.png" class="mw-100">
+              </div>
+              <div class="clearfix"></div>
+               <nav class=" py-2 bg-white shadow-sm rounded-lg">
+                  <ul class="nav justify-content-center nav-pills" id="pills-tab" role="tablist">
+                     <li class="nav-item">
+
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link border-right" id="nav-reader" data-toggle="pill" href="#pills-reader" role="tab" aria-controls="pills-profile" aria-selected="false">Reader</a>
+                     </li>
+
+                  </ul>
+               </nav>
+               <!--===============end-nav===============-->
+
+               <!--end-advertisement-->
+
+                  <!--end-tab-pane-(Create new qr code)-->
+                  <div class="tab-pane fade" id="pills-reader" role="tabpanel" aria-labelledby="pills-profile-tab">
+                     <div class="alert alert-danger  alert-dismissible fade show d-none" role="alert">
+                        <strong> No QR code found.</strong>   Please make sure the QR code is within the camera's frame
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <form class="form-row  align-items-center text-center">
+                        <div class="group col-sm-5 ">
+                           <label class="qrcode-text-btn d-inline-block m-0">
+                           <input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1>
+                           </label>
+                           <small class="d-block">Select QR Code</small>
+                        </div>
+                        <div class="textarea  col-sm-7">
+                           <textarea class="form-control w-100 " rows="5" id="dis" disabled></textarea>
+                           <a href="#" class="btn  btn-info copy-btn ml-3 disabled" >copy</a>
+                        </div>
+                     </form>
+                     <small class="text-muted d-block mt-3 ">Live camera enabled for mobile devices.If you are use desktop or laptop computer, you can upload qr code from yor computer.</small>
+                  </div>
+                  <!--end-tab-pane-(QR code reader)-->
+
+               <!--===============end-tab content===============-->
+
+               <!--end-advertisement-->
+
+            </div>
+            <!--content-->
+         </div>
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src='https://dmla.github.io/jsqrcode/src/qr_packed.js'></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>

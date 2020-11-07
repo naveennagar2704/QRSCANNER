@@ -1,0 +1,53 @@
+.qr-wrap{
+	width: 100%;
+	max-width: 600px;
+	margin:0 auto;
+}
+.qr-wrap .nav-link {
+    padding: .25rem 1rem;
+    color: #000;
+    border-radius: 0;
+}
+
+.qr-wrap .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+}
+.qrcode-text-btn {
+    display: inline-block;
+    background: url(../img/qr-btn.png) no-repeat;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    background-size: contain;
+}
+
+
+
+ .qrcode-text-btn > input[type=file] {position:absolute; overflow:hidden; width:1px; height:1px; opacity:0}
+
+
+
+.qr-wrap .textarea{
+	position: relative;
+}
+.qr-wrap .form-control:focus{
+	box-shadow: none;
+	border-color: #000;
+}
+.qr-wrap .textarea a{
+	position: absolute;
+	top: 5px;
+	right:10px;
+	    font-size: 12px;
+    padding: 3px 10px;
+    border: 0;
+    line-height: 1;
+    padding-bottom: 6px;
+}
+
+ a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
